@@ -39,7 +39,7 @@ div#flow {
 }
 div#print,
 div#flow {
-    counter-reset: footnote-counter footnote-marker-counter heading section subsection cat-0 cat-1 cat-2 !important;
+    counter-reset: footnote-counter footnote-marker-counter heading section subsection cat-figure cat-equation cat-photo cat-table !important;
 }
 .article-title {
     margin-bottom: 30px;
