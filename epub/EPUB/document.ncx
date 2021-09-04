@@ -17,6 +17,10 @@
       <navLabel><text>Doc 1</text></navLabel>
       <content src="document-1.xhtml#_1_0" />
     </navPoint>
+    <navPoint id="t_2_0-2">
+      <navLabel><text>Doc 2</text></navLabel>
+      <content src="document-2.xhtml#_2_0" />
+    </navPoint>
     <navPoint id="t2">
       <navLabel><text>Copyright</text></navLabel>
       <content src="copyright.xhtml#copyright" />
