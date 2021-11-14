@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Book 1</title>
-    <link type="text/css" rel="stylesheet" href="css/document.css" />
+    <link type="text/css" rel="stylesheet" href="css/book.css" />
     <style>
       a.fn {
         -adapt-template: url(data:application/xml,%3Chtml%20xmlns=%22http://www.w3.org/1999/xhtml%22%20xmlns:s=%22http://www.pyroxy.com/ns/shadow%22%3E%3Chead%3E%3Cstyle%3E.footnote-content%7Bfloat:footnote%7D%3C/style%3E%3C/head%3E%3Cbody%3E%3Cs:template%20id=%22footnote%22%3E%3Cs:content/%3E%3Cs:include%20class=%22footnote-content%22/%3E%3C/s:template%3E%3C/body%3E%3C/html%3E#footnote);
@@ -17,25 +17,8 @@
       body {
         background-color: white;
       }
-      .article-title,
-      section[role=doc-footnotes] {
-        counter-reset: cat-figure cat-equation cat-photo cat-table footnote-counter footnote-marker-counter;
-      }
-      section[role=doc-footnote]>*:first-child:before {
-        counter-increment: footnote-counter;
-        content: counter(footnote-counter) ". ";
-      }
-      section[role=doc-footnote] .cat-figure::after {
-        content: ' 'counter(cat-figure) 'A';
-      }
-      section[role=doc-footnote] .cat-equation::after {
-        content: ' 'counter(cat-equation) 'A';
-      }
-      section[role=doc-footnote] .cat-photo::after {
-        content: ' 'counter(cat-photo) 'A';
-      }
-      section[role=doc-footnote] .cat-table::after {
-        content: ' 'counter(cat-table) 'A';
+      section[role=doc-footnote] .footnote-counter:after {
+        content: ". ";
       }
       section.fnlist {
         display: none;
@@ -112,7 +95,7 @@
       <h1 class="booktitle">Book 1</h1>
     </div>
     <div class="copyrightpage frontmatter">
-      <p>Last Updated: 1630740091</p>
+      <p>Last Updated: 1636898040</p>
       <p>Created: 1621599367</p>
       <p>Language: English</p>
       <p>Created by: Johannes Wilm</p>
@@ -135,20 +118,20 @@
     </div>
     <div class="article-part article-title" id="_1_0">Doc 1</div>
     <div class="article-part article-richtext article-body">
-      <p>Doc 1<a href="#fn1" class="fn">1</a> content</p>
+      <p>Doc 1<a href="#fn1" class="fn"><span class="footnote-counter" data-chapter-counter="1" data-book-counter="1"></span></a> content</p>
     </div>
     <section class="fnlist" role="doc-footnotes">
-      <section id="fn1" role="doc-footnote">
-        <p>Doc 1 footnote</p>
+      <section id="fn1" role="doc-footnote" data-chapter-counter="1" data-book-counter="1">
+        <p><span class="footnote-counter" data-chapter-counter="1" data-book-counter="1"></span>Doc 1 footnote</p>
       </section>
     </section>
     <div class="article-part article-title" id="_2_0">Doc 2</div>
     <div class="article-part article-richtext article-body">
-      <p>There<a href="#fn2" class="fn">2</a> is a <strong>little content</strong> here.</p>
+      <p>There<a href="#fn2" class="fn"><span class="footnote-counter" data-chapter-counter="1" data-book-counter="2"></span></a> is a <strong>little content</strong> here.</p>
     </div>
     <section class="fnlist" role="doc-footnotes">
-      <section id="fn2" role="doc-footnote">
-        <p>Doc 2 footnote</p>
+      <section id="fn2" role="doc-footnote" data-chapter-counter="1" data-book-counter="2">
+        <p><span class="footnote-counter" data-chapter-counter="1" data-book-counter="2"></span>Doc 2 footnote</p>
       </section>
     </section>
   </body>
